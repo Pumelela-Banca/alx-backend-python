@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+type-annotated function to_str that
+takes a float n as argument and
+returns the string representation
+of the float
 """
 
 
-def
+def to_str(n: float) -> str:
+    """
+    returns float as string
+    """
+    return str(n)
