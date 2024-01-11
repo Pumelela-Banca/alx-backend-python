@@ -1,9 +1,14 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+makes a multiplier
 """
+import typing
 
 
-def
+def make_multiplier(multiplier: float) -> typing.Callable[[float], float]:
+    """ Return a function """
+    def func(n: float) -> float:
+        """ Return the multiplication of a float with multiplier """
+        return n * multiplier
+
+    return func
