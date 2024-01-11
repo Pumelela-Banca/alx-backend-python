@@ -1,9 +1,15 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+validates code
 """
+from typing import Any, Mapping, Union, TypeVar
+
+T = TypeVar('T')
 
 
-def
+def safely_get_value(dct: Mapping, key: Any,
+                     default: Union[T, None] = None) -> Union[Any, T]:
+    """ Return the first element of a list """
+    if key in dct:
+        return dct[key]
+    return default
