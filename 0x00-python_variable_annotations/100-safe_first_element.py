@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+correct duck-typed
 """
+from typing import Any, Union, Sequence
 
 
-def
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
+    if lst:
+        return lst[0]
+    else:
+        return None
