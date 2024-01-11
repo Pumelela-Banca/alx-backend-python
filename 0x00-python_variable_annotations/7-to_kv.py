@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+creates a tuple
 """
+from typing import Union, Tuple
 
 
-def
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """
+    returns a new tuple
+    """
+    return k, v * v
