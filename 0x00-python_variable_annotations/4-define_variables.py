@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+lists variables
 """
 
 
-def
+a: int = 1
+pi: float = 3.14
+i_understand_annotations: bool = True
+school: str = "Holberton"
