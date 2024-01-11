@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+sums mixed list
 """
+from typing import List
+from typing import Union
 
 
-def
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    """
+    sums mixed list
+    """
+    return sum(mxd_lst)
