@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """
-function concat that takes a string
-str1 and a string str2 as arguments and
-returns a concatenated string
+Uses typing module
 """
+from typing import List
 
 
-def
+def sum_list(input_list: List[float]) -> float:
+    """
+    returns sum of floats
+    """
+    return sum(input_list)
